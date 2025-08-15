@@ -28,7 +28,7 @@ Copy the downloaded `.exe` file (e.g., `lc_sensor_installer.exe`) to your Window
 
 ```bash
 lc_sensor_installer.exe
-
+```
 ---
 
 ## ✅ 3. Verify Sensor Registration
@@ -86,4 +86,4 @@ Once deployed:
 
 ---
 Reference
-- LimaCharlie Documentation
+- [LimaCharlie Documentation](https://docs.limacharlie.io/)
