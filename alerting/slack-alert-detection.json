@@ -1,0 +1,13 @@
+{
+  "channel": "#security-alerts",
+  "text": "*🚨 Detection Alert: Suspicious Activity Identified*",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Project Name:* `<<retrieve_detection.body.cat>>`\n*Time (epoch):* `<<retrieve_detection.body.detect.routing.event_time>>`\n*Computer Name:* `<<retrieve_detection.body.detect.routing.hostname>>`\n*Source IP:* `<<retrieve_detection.body.detect.routing.int_ip>>`\n*Username:* `<<retrieve_detection.body.detect.event.USER_NAME>>`\n*File Path:* `<<retrieve_detection.body.detect.event.FILE_PATH>>`\n*Command Line:* `<<retrieve_detection.body.detect.event.COMMAND_LINE>>`\n*Sensor ID:* `<<retrieve_detection.body.routing.sid>>`\n*Detection Link:* <<<retrieve_detection.body.link>>>"
+      }
+    }
+  ]
+}
