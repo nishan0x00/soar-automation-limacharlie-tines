@@ -1,0 +1,13 @@
+{
+  "channel": "#security-alerts",
+  "text": "*❌ Isolation Declined*",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "The computer `<<retrieve_detection.body.detect.routing.hostname>>` has *not* been isolated. Please investigate further if needed."
+      }
+    }
+  ]
+}
