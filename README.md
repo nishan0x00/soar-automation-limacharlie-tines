@@ -163,70 +163,42 @@ soar-edr-automation/
 │   ├── slack-alert-declined.json    # Slack message when isolation is declined
 │   ├── email-template.md            # HTML email used for detection alert
 │   └── alert-fields.md              # Reference for alert metadata fields
-
 ├── ...
 
 ---
 
-\## 💡 Why This Project?
-
-
+## 💡 Why This Project?
 
 This project simulates an actual SOC (Security Operations Center) workflow and highlights:
 
-
-
-\- Threat detection  
-
-\- Alert enrichment  
-
-\- Conditional automation  
-
-\- Human-in-the-loop response  
-
-\- Real-time decision-based remediation
-
-
+- Threat detection  
+- Alert enrichment  
+- Conditional automation  
+- Human-in-the-loop response  
+- Real-time decision-based remediation
 
 ---
 
+## 🚀 Skills Demonstrated
 
-
-\## 🚀 Skills Demonstrated
-
-
-
-\- SOAR \& EDR Integration (LimaCharlie + Tines)  
-
-\- Incident response automation  
-
-\- REST API usage  
-
-\- Alert engineering and delivery  
-
-\- Security tool orchestration
-
-
+- SOAR & EDR Integration (LimaCharlie + Tines)  
+- Incident response automation  
+- REST API usage  
+- Alert engineering and delivery  
+- Security tool orchestration
 
 ---
 
-
-
-\## 🔐 Disclaimer
-
-
+## 🔐 Disclaimer
 
 This project uses LaZagne strictly for educational and detection simulation purposes. No credentials were harvested or misused.
 
-
-
 ---
 
+## 📫 Contact
+
+Want to learn more or collaborate?  
+Reach out via [LinkedIn](https://www.linkedin.com/) or open an issue in this repo.
 
 
-\##📫 Contact
-
-
-
-Want to learn more or collaborate? Reach out via LinkedIn or open an issue.
 
