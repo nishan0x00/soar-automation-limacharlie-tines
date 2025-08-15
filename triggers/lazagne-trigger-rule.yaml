@@ -1,0 +1,40 @@
+# triggers/lazagne-detection-rule.yaml
+
+Detect:
+  events:
+    - NEW_PROCESS
+    - EXISTING_PROCESS
+  op: and
+  rules:
+    - op: is
+      value: windows
+    - op: or
+      rules:
+        - op: ends with
+          case sensitive: false
+          path: event/FILE_PATH
+          value: lazagne.exe
+        - op: ends with
+          case sensitive: false
+          path: event/COMMAND_LINE
+          value: all
+        - op: contains
+          case sensitive: false
+          path: event/COMMAND_LINE
+          value: lazagne
+        - op: is
+          case sensitive: false
+          path: event/HASH
+          value: dc06d62ee95062e714f2566c95b8edaabfd387023b1bf98a09078b84007d5268
+
+Response:
+  - action: report
+    name: Nishan - HackTool - Lazagne (SOAR-EDR)
+    metadata:
+      author: Nishan
+      description: Detect LaZagne (SOAR-EDR Tool)
+      level: medium
+      falsepositives:
+        - Unlikely
+      tags:
+        - attack.credential_access
