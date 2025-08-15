@@ -1,0 +1,13 @@
+{
+  "channel": "#security-alerts",
+  "text": "*✅ Isolation Status:*",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Isolation Status: `<<get_isolation_status.body.is_isolated>>`\nThe computer `<<retrieve_detection.body.detect.routing.hostname>>` has been isolated."
+      }
+    }
+  ]
+}
