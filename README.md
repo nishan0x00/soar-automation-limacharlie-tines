@@ -130,57 +130,43 @@ Alerts sent to Slack/Email contain:
 
 
 
-\## 📁 Project Structure
-
-
+## 📁 Project Structure
 
 ```bash
-
 soar-edr-automation/
-
-├── README.md
+├── README.md                        # Main project overview
+├── LICENSE
+├── .gitignore
 
 ├── architecture/
-
-│   └── soar-architecture.png
-
-├── tines/
-
-│   ├── tines-story.json
-
-│   └── prompt-screenshot.png
-
-├── limacharlie/
-
-│   ├── agent-setup.md
-
-│   └── isolation-payload.json
-
-├── alerting/
-
-│   ├── slack-alert.json
-
-│   ├── email-template.md
-
-│   └── alert-fields.md
+│   ├── soar-architecture.png        # Visual diagram of detection-to-response pipeline
+│   └── README.md                    # Text explanation of the architecture
 
 ├── docs/
+│   └── workflow.md                  # Step-by-step explanation of SOAR workflow
 
-│   └── workflow.md
+├── limacharlie/
+│   └── agent-setup.md               # Instructions to deploy LimaCharlie agent
+
+├── tines/
+│   ├── tines-story.json             # Exported automation story (URLs randomized)
+│   ├── prompt-screenshot.png        # Screenshot of user decision prompt
+│   ├── story-workflow.png           # Screenshot of full story flow (optional)
+│   └── story-notes.md               # Explanation of Tines workflow logic
 
 ├── triggers/
+│   └── lazagne-trigger-rule.yaml    # Detection rule for LaZagne execution
 
-│   └── lazagne-trigger-rule.yaml
+├── alerting/
+│   ├── slack-alert-detection.json   # Initial Slack alert with event metadata
+│   ├── slack-alert-isolated.json    # Slack message when host is isolated
+│   ├── slack-alert-declined.json    # Slack message when isolation is declined
+│   ├── email-template.md            # HTML email used for detection alert
+│   └── alert-fields.md              # Reference for alert metadata fields
 
-├── LICENSE
-
-└── .gitignore
-
-
+├── ...
 
 ---
-
-
 
 \## 💡 Why This Project?
 
