@@ -128,8 +128,6 @@ Alerts sent to Slack/Email contain:
 
 ---
 
-
-
 ## 📁 Project Structure
 
 ```bash
@@ -163,7 +161,7 @@ soar-edr-automation/
 │   ├── slack-alert-declined.json    # Slack message when isolation is declined
 │   ├── email-template.md            # HTML email used for detection alert
 │   └── alert-fields.md              # Reference for alert metadata fields
-├── ...
+```
 
 ---
 
@@ -198,7 +196,7 @@ This project uses LaZagne strictly for educational and detection simulation purp
 ## 📫 Contact
 
 Want to learn more or collaborate?  
-Reach out via [LinkedIn](https://www.linkedin.com/) or open an issue in this repo.
+Reach out via [LinkedIn](https://www.linkedin.com/in/nishanstha) or open an issue in this repo.
 
 
 
